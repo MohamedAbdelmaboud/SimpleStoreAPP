@@ -11,8 +11,6 @@ class GridViewBuilder extends StatelessWidget {
     required this.categoryName,
   });
   final String categoryName;
-  static String id = 'GridViewBuilder';
-
   @override
   Widget build(BuildContext context) {
     final future = GetCategoriyProductService()

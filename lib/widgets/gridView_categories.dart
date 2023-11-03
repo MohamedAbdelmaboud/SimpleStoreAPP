@@ -15,6 +15,9 @@ class GridViewCategories extends StatelessWidget {
   Widget build(BuildContext context) {
     List<CategoryModel> categoryModels = [
       CategoryModel(() {
+        Navigator.pushNamed(context, ALlProductsView.id);
+      }, imagePath: Assets.assetsImagesAll, categoryName: 'All products'),
+      CategoryModel(() {
         pushToProductView(context, arguments: electronics);
       },
           imagePath: Assets.assetsImagesElectronics,
@@ -28,9 +31,6 @@ class GridViewCategories extends StatelessWidget {
       CategoryModel(() {
         pushToProductView(context, arguments: jewelery);
       }, imagePath: Assets.assetsImagesJewelry, categoryName: 'Jewelry'),
-      CategoryModel(() {
-        Navigator.pushNamed(context, ALlProductsView.id);
-      }, imagePath: Assets.assetsImagesAll, categoryName: 'All products')
     ];
     return GridView.builder(
       padding: const EdgeInsets.only(top: 90.0, right: 16, left: 16),
