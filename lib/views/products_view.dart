@@ -22,8 +22,6 @@ class ProductsView extends StatelessWidget {
           actions: [
             IconButton(
               onPressed: () {
-                print(categoryName);
-
               },
               icon: const Icon(
                 FontAwesomeIcons.cartPlus,

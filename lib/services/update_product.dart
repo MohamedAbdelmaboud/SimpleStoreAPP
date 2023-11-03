@@ -14,9 +14,9 @@ class UpdateProductService extends StoreServices {
   }) async {
     Map headers = {};
     if (token != null) {
-      headers.addAll({'Authorization': 'Bearer '});
+      headers.addAll({'Authorization': 'Bearer $token'});
     }
-    final Response response = await dio.put(
+    final Response response = await dio.put( //put--> update
       '$baseUrl$productEndPoint/$id',
       data: {
         "id": id,
