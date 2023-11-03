@@ -1,6 +1,6 @@
 # store_app
 
-This is a simple app store with fake api in my learning course.
+This is a simple app store with fake api in my learning course
 ## Getting Started
 
 This project is a starting point for a Flutter application.
