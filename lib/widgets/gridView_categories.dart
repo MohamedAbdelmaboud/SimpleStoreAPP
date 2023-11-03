@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 import 'package:flutter/material.dart';
 import 'package:store_app/constants/assets.dart';
 import 'package:store_app/models/category_model.dart';
@@ -6,11 +7,11 @@ import 'package:store_app/views/products_view.dart';
 import 'package:store_app/widgets/category_card.dart';
 
 class GridViewCategories extends StatelessWidget {
-  GridViewCategories({super.key});
-  String men = "men's clothing";
-  String women = "women's clothing";
-  String jewelery = 'jewelery';
-  String electronics = 'electronics';
+ const GridViewCategories({super.key});
+ final String men = "men's clothing";
+ final String women = "women's clothing";
+ final String jewelery = 'jewelery';
+ final String electronics = 'electronics';
   @override
   Widget build(BuildContext context) {
     List<CategoryModel> categoryModels = [
