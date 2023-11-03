@@ -42,7 +42,6 @@ class _CustomCardState extends State<CustomCard> {
             ),
           ]),
           child: Card(
-            
               elevation: 10,
               child: Padding(
                 padding:
@@ -71,7 +70,7 @@ class _CustomCardState extends State<CustomCard> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         CustomText(
-                          r'$ ' '${widget.productModel.price.toString()}',
+                          r'$ ''${widget.productModel.price.toString()}',
                           fontSize: 16,
                         ),
                         InkWell(

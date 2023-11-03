@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:store_app/models/product_model.dart';
+import 'package:store_app/services/get_all_categories.dart';
 import 'package:store_app/services/get_all_category_products.dart';
+import 'package:store_app/services/get_all_products.dart';
 import 'package:store_app/widgets/custom_card.dart';
 import 'package:store_app/widgets/custom_text.dart';
 
-class GridViewBuilder extends StatelessWidget {
-  const GridViewBuilder({
+class GridViewBuilderAll extends StatelessWidget {
+  const GridViewBuilderAll({
     super.key,
-    required this.categoryName,
   });
-  final String categoryName;
   static String id = 'GridViewBuilder';
 
   @override
   Widget build(BuildContext context) {
-    final future = GetCategoriyProductService()
-        .getCategoryProduct(categoryName: categoryName);
+    Future<List<ProductModel>>? future = GetAllproductsService()
+        .getAllProducts();
     return FutureBuilder<List<ProductModel>>(
       future: future,
       builder: (context, snapshot) {
