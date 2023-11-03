@@ -14,9 +14,9 @@ class ALlProductsView extends StatelessWidget {
           elevation: 0,
           backgroundColor: Colors.white,
           title: const CustomText(
-            'New trend',
+            'All products',
             fontSize: 25,
-          ).pacifico(),
+          ),
           centerTitle: true,
           actions: [
             IconButton(

@@ -14,10 +14,10 @@ class ProductsView extends StatelessWidget {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
-          title: const CustomText(
-            'New trend',
-            fontSize: 25,
-          ).pacifico(),
+          title:  CustomText(
+            categoryName,
+            fontSize: 20,
+          ),
           centerTitle: true,
           actions: [
             IconButton(

@@ -14,10 +14,10 @@ class HomeView extends StatelessWidget {
           backgroundColor: Colors.white,
           title: const CustomText(
             'My Store',
-            fontSize: 25,
-          ).pacifico(),
+            fontSize: 20,
+          ),
           centerTitle: true,
         ),
-        body:  GridViewCategories());
+        body: const GridViewCategories());
   }
 }
